@@ -7,6 +7,14 @@
 //
 
 import UIKit
+let pineapple = #imageLiteral(resourceName: "pineapple")
+let rambutan = #imageLiteral(resourceName: "rambutan")
+let dragonfruit = #imageLiteral(resourceName: "dragon fruit")
+let durian = #imageLiteral(resourceName: "durian")
+var pCount = 0
+var rCount = 0
+var dCount = 0
+var drCount = 0
 
 class ViewController: UIViewController {
     @IBOutlet weak var likeButton: UILabel!
@@ -17,13 +25,16 @@ class ViewController: UIViewController {
     }
 
     @IBAction func like(_ sender: Any) {
+        
     }
     
     
     @IBAction func dislike(_ sender: Any) {
+        
     }
     
     @IBAction func next(_ sender: Any) {
+        
     }
 }
 
