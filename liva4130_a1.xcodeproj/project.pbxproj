@@ -1,0 +1,511 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1ECA1B9923CCF93B00B1474B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECA1B9823CCF93B00B1474B /* AppDelegate.swift */; };
+		1ECA1B9B23CCF93B00B1474B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECA1B9A23CCF93B00B1474B /* SceneDelegate.swift */; };
+		1ECA1B9D23CCF93B00B1474B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECA1B9C23CCF93B00B1474B /* ViewController.swift */; };
+		1ECA1BA023CCF93B00B1474B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ECA1B9E23CCF93B00B1474B /* Main.storyboard */; };
+		1ECA1BA323CCF93B00B1474B /* liva4130_a1.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1ECA1BA123CCF93B00B1474B /* liva4130_a1.xcdatamodeld */; };
+		1ECA1BA523CCF93D00B1474B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1ECA1BA423CCF93D00B1474B /* Assets.xcassets */; };
+		1ECA1BA823CCF93D00B1474B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ECA1BA623CCF93D00B1474B /* LaunchScreen.storyboard */; };
+		1ECA1BB323CCF93D00B1474B /* liva4130_a1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECA1BB223CCF93D00B1474B /* liva4130_a1Tests.swift */; };
+		1ECA1BC223CCFB1A00B1474B /* durian.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1ECA1BBE23CCFB1A00B1474B /* durian.jpg */; };
+		1ECA1BC323CCFB1A00B1474B /* pineapple.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1ECA1BBF23CCFB1A00B1474B /* pineapple.jpg */; };
+		1ECA1BC423CCFB1A00B1474B /* rambutan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1ECA1BC023CCFB1A00B1474B /* rambutan.jpg */; };
+		1ECA1BC523CCFB1A00B1474B /* dragon fruit.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1ECA1BC123CCFB1A00B1474B /* dragon fruit.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1ECA1BAF23CCF93D00B1474B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1ECA1B8D23CCF93B00B1474B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1ECA1B9423CCF93B00B1474B;
+			remoteInfo = liva4130_a1;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1ECA1B9523CCF93B00B1474B /* liva4130_a1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = liva4130_a1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1ECA1B9823CCF93B00B1474B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1ECA1B9A23CCF93B00B1474B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1ECA1B9C23CCF93B00B1474B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1ECA1B9F23CCF93B00B1474B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1ECA1BA223CCF93B00B1474B /* liva4130_a1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = liva4130_a1.xcdatamodel; sourceTree = "<group>"; };
+		1ECA1BA423CCF93D00B1474B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1ECA1BA723CCF93D00B1474B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1ECA1BA923CCF93D00B1474B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1ECA1BAE23CCF93D00B1474B /* liva4130_a1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = liva4130_a1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1ECA1BB223CCF93D00B1474B /* liva4130_a1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = liva4130_a1Tests.swift; sourceTree = "<group>"; };
+		1ECA1BB423CCF93D00B1474B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1ECA1BBE23CCFB1A00B1474B /* durian.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = durian.jpg; sourceTree = "<group>"; };
+		1ECA1BBF23CCFB1A00B1474B /* pineapple.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pineapple.jpg; sourceTree = "<group>"; };
+		1ECA1BC023CCFB1A00B1474B /* rambutan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rambutan.jpg; sourceTree = "<group>"; };
+		1ECA1BC123CCFB1A00B1474B /* dragon fruit.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "dragon fruit.jpg"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1ECA1B9223CCF93B00B1474B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1ECA1BAB23CCF93D00B1474B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1ECA1B8C23CCF93B00B1474B = {
+			isa = PBXGroup;
+			children = (
+				1ECA1B9723CCF93B00B1474B /* liva4130_a1 */,
+				1ECA1BB123CCF93D00B1474B /* liva4130_a1Tests */,
+				1ECA1B9623CCF93B00B1474B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1ECA1B9623CCF93B00B1474B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1ECA1B9523CCF93B00B1474B /* liva4130_a1.app */,
+				1ECA1BAE23CCF93D00B1474B /* liva4130_a1Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1ECA1B9723CCF93B00B1474B /* liva4130_a1 */ = {
+			isa = PBXGroup;
+			children = (
+				1ECA1B9823CCF93B00B1474B /* AppDelegate.swift */,
+				1ECA1B9A23CCF93B00B1474B /* SceneDelegate.swift */,
+				1ECA1B9C23CCF93B00B1474B /* ViewController.swift */,
+				1ECA1B9E23CCF93B00B1474B /* Main.storyboard */,
+				1ECA1BA423CCF93D00B1474B /* Assets.xcassets */,
+				1ECA1BBD23CCFB1A00B1474B /* images */,
+				1ECA1BA623CCF93D00B1474B /* LaunchScreen.storyboard */,
+				1ECA1BA923CCF93D00B1474B /* Info.plist */,
+				1ECA1BA123CCF93B00B1474B /* liva4130_a1.xcdatamodeld */,
+			);
+			path = liva4130_a1;
+			sourceTree = "<group>";
+		};
+		1ECA1BB123CCF93D00B1474B /* liva4130_a1Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1ECA1BB223CCF93D00B1474B /* liva4130_a1Tests.swift */,
+				1ECA1BB423CCF93D00B1474B /* Info.plist */,
+			);
+			path = liva4130_a1Tests;
+			sourceTree = "<group>";
+		};
+		1ECA1BBD23CCFB1A00B1474B /* images */ = {
+			isa = PBXGroup;
+			children = (
+				1ECA1BBE23CCFB1A00B1474B /* durian.jpg */,
+				1ECA1BBF23CCFB1A00B1474B /* pineapple.jpg */,
+				1ECA1BC023CCFB1A00B1474B /* rambutan.jpg */,
+				1ECA1BC123CCFB1A00B1474B /* dragon fruit.jpg */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1ECA1B9423CCF93B00B1474B /* liva4130_a1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1ECA1BB723CCF93D00B1474B /* Build configuration list for PBXNativeTarget "liva4130_a1" */;
+			buildPhases = (
+				1ECA1B9123CCF93B00B1474B /* Sources */,
+				1ECA1B9223CCF93B00B1474B /* Frameworks */,
+				1ECA1B9323CCF93B00B1474B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = liva4130_a1;
+			productName = liva4130_a1;
+			productReference = 1ECA1B9523CCF93B00B1474B /* liva4130_a1.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1ECA1BAD23CCF93D00B1474B /* liva4130_a1Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1ECA1BBA23CCF93D00B1474B /* Build configuration list for PBXNativeTarget "liva4130_a1Tests" */;
+			buildPhases = (
+				1ECA1BAA23CCF93D00B1474B /* Sources */,
+				1ECA1BAB23CCF93D00B1474B /* Frameworks */,
+				1ECA1BAC23CCF93D00B1474B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1ECA1BB023CCF93D00B1474B /* PBXTargetDependency */,
+			);
+			name = liva4130_a1Tests;
+			productName = liva4130_a1Tests;
+			productReference = 1ECA1BAE23CCF93D00B1474B /* liva4130_a1Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1ECA1B8D23CCF93B00B1474B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = wlu;
+				TargetAttributes = {
+					1ECA1B9423CCF93B00B1474B = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					1ECA1BAD23CCF93D00B1474B = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 1ECA1B9423CCF93B00B1474B;
+					};
+				};
+			};
+			buildConfigurationList = 1ECA1B9023CCF93B00B1474B /* Build configuration list for PBXProject "liva4130_a1" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1ECA1B8C23CCF93B00B1474B;
+			productRefGroup = 1ECA1B9623CCF93B00B1474B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1ECA1B9423CCF93B00B1474B /* liva4130_a1 */,
+				1ECA1BAD23CCF93D00B1474B /* liva4130_a1Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1ECA1B9323CCF93B00B1474B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1ECA1BC323CCFB1A00B1474B /* pineapple.jpg in Resources */,
+				1ECA1BC223CCFB1A00B1474B /* durian.jpg in Resources */,
+				1ECA1BC523CCFB1A00B1474B /* dragon fruit.jpg in Resources */,
+				1ECA1BA823CCF93D00B1474B /* LaunchScreen.storyboard in Resources */,
+				1ECA1BC423CCFB1A00B1474B /* rambutan.jpg in Resources */,
+				1ECA1BA523CCF93D00B1474B /* Assets.xcassets in Resources */,
+				1ECA1BA023CCF93B00B1474B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1ECA1BAC23CCF93D00B1474B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1ECA1B9123CCF93B00B1474B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1ECA1B9D23CCF93B00B1474B /* ViewController.swift in Sources */,
+				1ECA1BA323CCF93B00B1474B /* liva4130_a1.xcdatamodeld in Sources */,
+				1ECA1B9923CCF93B00B1474B /* AppDelegate.swift in Sources */,
+				1ECA1B9B23CCF93B00B1474B /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1ECA1BAA23CCF93D00B1474B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1ECA1BB323CCF93D00B1474B /* liva4130_a1Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1ECA1BB023CCF93D00B1474B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1ECA1B9423CCF93B00B1474B /* liva4130_a1 */;
+			targetProxy = 1ECA1BAF23CCF93D00B1474B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1ECA1B9E23CCF93B00B1474B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1ECA1B9F23CCF93B00B1474B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1ECA1BA623CCF93D00B1474B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1ECA1BA723CCF93D00B1474B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1ECA1BB523CCF93D00B1474B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1ECA1BB623CCF93D00B1474B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1ECA1BB823CCF93D00B1474B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = liva4130_a1/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.wlu.liva4130-a1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1ECA1BB923CCF93D00B1474B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = liva4130_a1/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.wlu.liva4130-a1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1ECA1BBB23CCF93D00B1474B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = liva4130_a1Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.wlu.liva4130-a1Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/liva4130_a1.app/liva4130_a1";
+			};
+			name = Debug;
+		};
+		1ECA1BBC23CCF93D00B1474B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = liva4130_a1Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.wlu.liva4130-a1Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/liva4130_a1.app/liva4130_a1";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1ECA1B9023CCF93B00B1474B /* Build configuration list for PBXProject "liva4130_a1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1ECA1BB523CCF93D00B1474B /* Debug */,
+				1ECA1BB623CCF93D00B1474B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1ECA1BB723CCF93D00B1474B /* Build configuration list for PBXNativeTarget "liva4130_a1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1ECA1BB823CCF93D00B1474B /* Debug */,
+				1ECA1BB923CCF93D00B1474B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1ECA1BBA23CCF93D00B1474B /* Build configuration list for PBXNativeTarget "liva4130_a1Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1ECA1BBB23CCF93D00B1474B /* Debug */,
+				1ECA1BBC23CCF93D00B1474B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1ECA1BA123CCF93B00B1474B /* liva4130_a1.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1ECA1BA223CCF93B00B1474B /* liva4130_a1.xcdatamodel */,
+			);
+			currentVersion = 1ECA1BA223CCF93B00B1474B /* liva4130_a1.xcdatamodel */;
+			path = liva4130_a1.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1ECA1B8D23CCF93B00B1474B /* Project object */;
+}
