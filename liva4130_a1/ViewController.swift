@@ -7,6 +7,14 @@
 //
 
 import UIKit
+let pineapple = #imageLiteral(resourceName: "pineapple")
+let rambutan = #imageLiteral(resourceName: "rambutan")
+let dragonfruit = #imageLiteral(resourceName: "dragon fruit")
+let durian = #imageLiteral(resourceName: "durian")
+var pCount = 0
+var rCount = 0
+var dCount = 0
+var drCount = 0
 
 var imgRambutan = UIImage(named: "images/durian")
 var imgPineapple = UIImage(named:  "images/pineapple")
