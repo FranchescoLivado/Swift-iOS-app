@@ -7,45 +7,42 @@
 //
 
 import UIKit
-let pineapple = #imageLiteral(resourceName: "pineapple")
-let rambutan = #imageLiteral(resourceName: "rambutan")
-let dragonfruit = #imageLiteral(resourceName: "dragon fruit")
-let durian = #imageLiteral(resourceName: "durian")
-var pCount = 0
-var rCount = 0
-var dCount = 0
-var drCount = 0
+var counter = 1;
 
-var imgRambutan = UIImage(named: "images/durian")
-var imgPineapple = UIImage(named:  "images/pineapple")
-var imgDragFruit = UIImage(named:  "images/dragon_fruit")
-var imgDurian = UIImage(named: "images/durian")
-
-var imgSet = [imgRambutan, imgPineapple, imgDragFruit, imgDurian]
-
-var pineapple = fruitStats(fruit: imgPineapple ?? <#default value#>)
-
-var durian = fruitStats(fruit: imgDurian ?? <#default value#>)
-
-var dragFruit = fruitStats(fruit: imgDragFruit ?? <#default value#>)
-
-var rambutan = fruitStats(fruit: imgRambutan ?? <#default value#>)
-
-var fruitSet = [pineapple, durian, dragFruit, rambutan]
+let imgRambutan = UIImage(named:"images/rambutan")
+let imgPineapple = UIImage(named:"images/pineapple")
+let imgDragFruit = UIImage(named:"images/dragon fruit")
+let imgDurian = UIImage(named:"images/durian")
 
 class fruitStats{
     var likes: Int
     var dislikes: Int
-    var image: UIImage??
+    var image: UIImage
     init(fruit: UIImage){
         self.likes = 0;
         self.dislikes = 0;
         self.image = fruit;
     }
 }
+var imgSet = [imgRambutan, imgPineapple, imgDragFruit, imgDurian]
+
+let pineapple = fruitStats(fruit: imgPineapple!)
+
+let durian = fruitStats(fruit: imgDurian!)
+
+let dragFruit = fruitStats(fruit: imgDragFruit!)
+
+let rambutan = fruitStats(fruit: imgRambutan!)
+
+var fruitSet = [pineapple, durian, dragFruit, rambutan]
+
 class ViewController: UIViewController {
-    @IBOutlet weak var likeButton: UILabel!
-    @IBOutlet weak var dislikeButton: UILabel!
+
+    @IBOutlet weak var dislikeLabel: UILabel!
+    @IBOutlet weak var likeLabel: UILabel!
+    @IBOutlet weak var fruitImage: UIImageView!
+ 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -53,52 +50,64 @@ class ViewController: UIViewController {
     
     
     
+
     
-    @IBAction func like(_ sender: Any) {
-        
-        for fruit in fruitSet{
-            if fruit.image == imgDurian{
-                fruit.likes = fruit.likes + 1
-                
-            }
-            if fruit.image == imgDragFruit{
-                fruit.likes = fruit.likes + 1
-                
-            }
-            if fruit.image == imgPineapple{
-                fruit.likes = fruit.likes + 1
-                
-            }
-            if fruit.image == imgRambutan{
-                fruit.likes = fruit.likes + 1
-                
-            }
-        }
-    }
     
     @IBAction func dislike(_ sender: Any) {
         for fruit in fruitSet{
             if fruit.image == imgDurian{
                 fruit.dislikes = fruit.dislikes + 1
-                
-            }
+                dislikeLabel.text = String(fruit.dislikes)            }
             if fruit.image == imgDragFruit{
                 fruit.dislikes = fruit.dislikes + 1
-                
-            }
+                 dislikeLabel.text = String(fruit.dislikes)            }
             if fruit.image == imgPineapple{
                 fruit.dislikes = fruit.dislikes + 1
-                
-            }
+                 dislikeLabel.text = String(fruit.dislikes)            }
             if fruit.image == imgRambutan{
                 fruit.dislikes = fruit.dislikes + 1
-                
-            }
+                 dislikeLabel.text = String(fruit.dislikes)            }
         }
+        
+    }
+    
+    @IBAction func like(_ sender: Any) {
+             for fruit in fruitSet{
+                      if fruit.image == imgDurian{
+                          fruit.likes = fruit.likes + 1
+                        likeLabel.text = String(fruit.likes)                      }
+                      if fruit.image == imgDragFruit{
+                          fruit.likes = fruit.likes + 1
+                          likeLabel.text = String(fruit.likes)                         }
+                      if fruit.image == imgPineapple{
+                          fruit.likes = fruit.likes + 1
+                          likeLabel.text = String(fruit.likes)                         }
+                      if fruit.image == imgRambutan{
+                          fruit.likes = fruit.likes + 1
+                          likeLabel.text = String(fruit.likes)                         }
+           }
+        
     }
     
     @IBAction func next(_ sender: Any) {
+                counter += 1
+        
+        if (counter == 1){
+            fruitImage.image = imgPineapple
+
+        }
+        else if (counter == 2){
+            fruitImage.image = imgDurian
+        }
+        else if (counter == 3){
+            fruitImage.image = imgDragFruit
+
+        }
+        else{
+            counter = 0
+            fruitImage.image = imgRambutan
+        }
         
     }
+    
 }
-
