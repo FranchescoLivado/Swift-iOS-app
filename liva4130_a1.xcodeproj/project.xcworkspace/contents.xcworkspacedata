@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
+   <Group
+      location = "group:AppIcon.appiconset"
+      name = "AppIcon.appiconset">
+   </Group>
    <FileRef
-      location = "self:liva4130_a1.xcodeproj">
+      location = "self:">
    </FileRef>
 </Workspace>

@@ -10,8 +10,6 @@ import UIKit
 
 var counter = 1;
 
-
-
 class fruitStats{
     var likes: Int
     var dislikes: Int
@@ -37,8 +35,6 @@ let imgDurian = UIImage(named:"images/durian")
 
 class ViewController: UIViewController {
 
-
-
     @IBOutlet weak var dislikeLabel: UILabel!
     @IBOutlet weak var likeLabel: UILabel!
     @IBOutlet weak var fruitImage: UIImageView!
@@ -58,12 +54,7 @@ class ViewController: UIViewController {
         fruitImage.image = imgPineapple
     }
     
-    
-
-    
-
-    
-    
+ 
     @IBAction func dislike(_ sender: Any) {
     
         if fruitImage.image == imgDurian{
