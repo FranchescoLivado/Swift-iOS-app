@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E2682FD23E0A3D200F185A8 /* Fruit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2682FC23E0A3D200F185A8 /* Fruit.swift */; };
+		1E2682FF23E0A47400F185A8 /* FruitCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2682FE23E0A47400F185A8 /* FruitCollection.swift */; };
 		1EBFFF9C23D606CC00A44F3E /* 88.png in Resources */ = {isa = PBXBuildFile; fileRef = 1EBFFF7C23D606CC00A44F3E /* 88.png */; };
 		1EBFFF9D23D606CC00A44F3E /* 1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 1EBFFF7D23D606CC00A44F3E /* 1024.png */; };
 		1EBFFF9E23D606CC00A44F3E /* 76.png in Resources */ = {isa = PBXBuildFile; fileRef = 1EBFFF7E23D606CC00A44F3E /* 76.png */; };
@@ -64,6 +66,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E2682FC23E0A3D200F185A8 /* Fruit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fruit.swift; sourceTree = "<group>"; };
+		1E2682FE23E0A47400F185A8 /* FruitCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitCollection.swift; sourceTree = "<group>"; };
 		1EBFFF7C23D606CC00A44F3E /* 88.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 88.png; sourceTree = "<group>"; };
 		1EBFFF7D23D606CC00A44F3E /* 1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1024.png; sourceTree = "<group>"; };
 		1EBFFF7E23D606CC00A44F3E /* 76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 76.png; sourceTree = "<group>"; };
@@ -195,6 +199,8 @@
 				1ECA1B9823CCF93B00B1474B /* AppDelegate.swift */,
 				1ECA1B9A23CCF93B00B1474B /* SceneDelegate.swift */,
 				1ECA1B9C23CCF93B00B1474B /* ViewController.swift */,
+				1E2682FC23E0A3D200F185A8 /* Fruit.swift */,
+				1E2682FE23E0A47400F185A8 /* FruitCollection.swift */,
 				1ECA1B9E23CCF93B00B1474B /* Main.storyboard */,
 				1ECA1BA423CCF93D00B1474B /* Assets.xcassets */,
 				1EBFFF7B23D606CC00A44F3E /* AppIcon.appiconset */,
@@ -363,6 +369,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E2682FF23E0A47400F185A8 /* FruitCollection.swift in Sources */,
+				1E2682FD23E0A3D200F185A8 /* Fruit.swift in Sources */,
 				1ECA1B9D23CCF93B00B1474B /* ViewController.swift in Sources */,
 				1ECA1BA323CCF93B00B1474B /* liva4130_a1.xcdatamodeld in Sources */,
 				1ECA1B9923CCF93B00B1474B /* AppDelegate.swift in Sources */,
