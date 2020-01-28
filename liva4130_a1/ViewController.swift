@@ -9,7 +9,7 @@
 import UIKit
 
 var counter = 1;
-
+/*
 class fruitStats{
     var likes: Int
     var dislikes: Int
@@ -27,7 +27,7 @@ var durian = fruitStats()
 var dragFruit = fruitStats()
 
 var rambutan = fruitStats()
-
+*/
 let imgRambutan = UIImage(named:"images/rambutan")
 let imgPineapple = UIImage(named:"images/pineapple")
 let imgDragFruit = UIImage(named:"images/dragon fruit")
@@ -47,16 +47,38 @@ class ViewController: UIViewController {
         let imgPineapple = UIImage(named:"images/pineapple")
         let imgDragFruit = UIImage(named:"images/dragon fruit")
         let imgDurian = UIImage(named:"images/durian")
-        pineapple = fruitStats(fruit: imgPineapple!)
-        durian  = fruitStats(fruit: imgDurian!)
-        dragFruit = fruitStats(fruit: imgDragFruit!)
-        rambutan = fruitStats(fruit: imgRambutan!)
-        fruitImage.image = imgPineapple
+        //pineapple = fruitStats(fruit: imgPineapple!)
+        //durian  = fruitStats(fruit: imgDurian!)
+        //dragFruit = fruitStats(fruit: imgDragFruit!)
+        //rambutan = fruitStats(fruit: imgRambutan!)
+        
+        //fruitImage.image = imgPineapple
+        
+        _ = FruitCollection()
+        
+        if let i = UserDefaults.standard.integer(forKey: "currentIndex") as Int? {
+            print("Fruits existed with index: \(i)")
+            FruitCollection.setCurrentIndex(to: i)
+            }
+        let fruit = FruitCollection.currentFruit()
+        
+        if fruit.fruitImageName == "images/rambutan" {
+            fruitImage.image = imgRambutan
+        }
+        if fruit.fruitImageName == "images/pineapple" {
+            fruitImage.image = imgPineapple
+        }
+        if fruit.fruitImageName == "images/dragon fruit" {
+            fruitImage.image = imgDragFruit
+        }
+        if fruit.fruitImageName == "images/durian" {
+            fruitImage.image = imgDurian
+        }
     }
     
  
     @IBAction func dislike(_ sender: Any) {
-    
+        /*
         if fruitImage.image == imgDurian{
                 durian.dislikes = durian.dislikes + 1
                 dislikeLabel.text = String(durian.dislikes)
@@ -79,13 +101,38 @@ class ViewController: UIViewController {
                 rambutan.dislikes = rambutan.dislikes + 1
                 dislikeLabel.text = String(rambutan.dislikes)
                 likeLabel.text = String(rambutan.likes)
+        }*/
+        let index = FruitCollection.getCurrentIndex()
+        if FruitCollection.collection[index].fruitImageName == "images/durian"{
+                    FruitCollection.collection[index].dislikes = FruitCollection.collection[index].dislikes + 1
+                    likeLabel.text = String(FruitCollection.collection[index].likes)
+                    dislikeLabel.text = String(FruitCollection.collection[index].dislikes)
+            
         }
-        
+        if FruitCollection.collection[index].fruitImageName == "images/rambutan"{
+                    FruitCollection.collection[index].dislikes = FruitCollection.collection[index].dislikes + 1
+                    likeLabel.text = String(FruitCollection.collection[index].likes)
+                    dislikeLabel.text = String(FruitCollection.collection[index].dislikes)
+        }
+        if FruitCollection.collection[index].fruitImageName == "images/pineapple"{
+                    FruitCollection.collection[index].dislikes = FruitCollection.collection[index].dislikes + 1
+                    likeLabel.text = String(FruitCollection.collection[index].likes)
+                    dislikeLabel.text = String(FruitCollection.collection[index].dislikes)
+            
+        }
+        if FruitCollection.collection[index].fruitImageName == "images/dragon fruit"{
+                    FruitCollection.collection[index].dislikes = FruitCollection.collection[index].dislikes + 1
+                    likeLabel.text = String(FruitCollection.collection[index].likes)
+                    dislikeLabel.text = String(FruitCollection.collection[index].dislikes)
+            
+        }
         
     }
     
     @IBAction func like(_ sender: Any) {
-        
+
+        let index = FruitCollection.getCurrentIndex()
+        /*
             if fruitImage.image == imgDurian{
                         durian.likes = durian.likes + 1
                         likeLabel.text = String(durian.likes)
@@ -108,7 +155,31 @@ class ViewController: UIViewController {
                         likeLabel.text = String(rambutan.likes)
                         dislikeLabel.text = String(rambutan.dislikes)
                 
-            }
+            } */
+        if FruitCollection.collection[index].fruitImageName == "images/durian"{
+                    FruitCollection.collection[index].likes = FruitCollection.collection[index].likes + 1
+                    likeLabel.text = String(FruitCollection.collection[index].likes)
+                    dislikeLabel.text = String(FruitCollection.collection[index].dislikes)
+            
+        }
+        if FruitCollection.collection[index].fruitImageName == "images/rambutan"{
+                    FruitCollection.collection[index].likes = FruitCollection.collection[index].likes + 1
+                    likeLabel.text = String(FruitCollection.collection[index].likes)
+                    dislikeLabel.text = String(FruitCollection.collection[index].dislikes)
+        }
+        if FruitCollection.collection[index].fruitImageName == "images/pineapple"{
+                    FruitCollection.collection[index].likes = FruitCollection.collection[index].likes + 1
+                    likeLabel.text = String(FruitCollection.collection[index].likes)
+                    dislikeLabel.text = String(FruitCollection.collection[index].dislikes)
+            
+        }
+        if FruitCollection.collection[index].fruitImageName == "images/dragon fruit"{
+                    FruitCollection.collection[index].likes = FruitCollection.collection[index].likes + 1
+                    likeLabel.text = String(FruitCollection.collection[index].likes)
+                    dislikeLabel.text = String(FruitCollection.collection[index].dislikes)
+            
+        }
+        
                 
         
         
@@ -116,6 +187,7 @@ class ViewController: UIViewController {
     
     
     @IBAction func next(_ sender: Any) {
+        /*
                 counter += 1
         
         if (counter == 1){
@@ -138,6 +210,45 @@ class ViewController: UIViewController {
             fruitImage.image = imgRambutan
             likeLabel.text = String(rambutan.likes)
             dislikeLabel.text = String(rambutan.dislikes)
+        }
+         */
+
+        
+        var index = 0
+        
+        print(index)
+        index = FruitCollection.getCurrentIndex()
+        
+        index += 1
+        if index >= FruitCollection.collection.count {
+            index = 0
+        }
+        FruitCollection.setCurrentIndex(to: index)
+        let fruit = FruitCollection.currentFruit()
+        if fruit.fruitImageName == "images/rambutan" {
+            fruitImage.image = imgRambutan
+            likeLabel.text = String("\(FruitCollection.collection[index].likes)")
+            dislikeLabel.text = String("\(FruitCollection.collection[index].dislikes)")
+            
+        }
+        if fruit.fruitImageName == "images/pineapple" {
+            fruitImage.image = imgPineapple
+            likeLabel.text = String("\(FruitCollection.collection[index].likes)")
+            dislikeLabel.text = String("\(FruitCollection.collection[index].dislikes)")
+            
+        }
+        if fruit.fruitImageName == "images/dragon fruit" {
+            fruitImage.image = imgDragFruit
+            likeLabel.text = String("\(FruitCollection.collection[index].likes)")
+            dislikeLabel.text = String("\(FruitCollection.collection[index].dislikes)")
+            
+        }
+        if fruit.fruitImageName == "images/durian" {
+            fruitImage.image = imgDurian
+            likeLabel.text = String("\(FruitCollection.collection[index].likes)")
+            dislikeLabel.text = String("\(FruitCollection.collection[index].dislikes)")
+            
+            
         }
         
     }
