@@ -53,6 +53,8 @@
 		1ECA1BC323CCFB1A00B1474B /* pineapple.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1ECA1BBF23CCFB1A00B1474B /* pineapple.jpg */; };
 		1ECA1BC423CCFB1A00B1474B /* rambutan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1ECA1BC023CCFB1A00B1474B /* rambutan.jpg */; };
 		1ECA1BC523CCFB1A00B1474B /* dragon fruit.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1ECA1BC123CCFB1A00B1474B /* dragon fruit.jpg */; };
+		1EE8898D23F349E500E3D796 /* minus-30-30.png in Resources */ = {isa = PBXBuildFile; fileRef = 1EE8898B23F349E500E3D796 /* minus-30-30.png */; };
+		1EE8898E23F349E500E3D796 /* plus-30-30.png in Resources */ = {isa = PBXBuildFile; fileRef = 1EE8898C23F349E500E3D796 /* plus-30-30.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +118,8 @@
 		1ECA1BBF23CCFB1A00B1474B /* pineapple.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pineapple.jpg; sourceTree = "<group>"; };
 		1ECA1BC023CCFB1A00B1474B /* rambutan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rambutan.jpg; sourceTree = "<group>"; };
 		1ECA1BC123CCFB1A00B1474B /* dragon fruit.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "dragon fruit.jpg"; sourceTree = "<group>"; };
+		1EE8898B23F349E500E3D796 /* minus-30-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "minus-30-30.png"; path = "../../../Desktop/minus-30-30.png"; sourceTree = "<group>"; };
+		1EE8898C23F349E500E3D796 /* plus-30-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "plus-30-30.png"; path = "../../../Desktop/plus-30-30.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +207,8 @@
 				1E2682FE23E0A47400F185A8 /* FruitCollection.swift */,
 				1ECA1B9E23CCF93B00B1474B /* Main.storyboard */,
 				1ECA1BA423CCF93D00B1474B /* Assets.xcassets */,
+				1EE8898B23F349E500E3D796 /* minus-30-30.png */,
+				1EE8898C23F349E500E3D796 /* plus-30-30.png */,
 				1EBFFF7B23D606CC00A44F3E /* AppIcon.appiconset */,
 				1ECA1BBD23CCFB1A00B1474B /* images */,
 				1ECA1BA623CCF93D00B1474B /* LaunchScreen.storyboard */,
@@ -319,6 +325,7 @@
 				1EBFFF9D23D606CC00A44F3E /* 1024.png in Resources */,
 				1ECA1BC323CCFB1A00B1474B /* pineapple.jpg in Resources */,
 				1EBFFFB723D606CC00A44F3E /* 40.png in Resources */,
+				1EE8898D23F349E500E3D796 /* minus-30-30.png in Resources */,
 				1EBFFF9C23D606CC00A44F3E /* 88.png in Resources */,
 				1EBFFFB923D606CC00A44F3E /* 50.png in Resources */,
 				1EBFFFB323D606CC00A44F3E /* 57.png in Resources */,
@@ -338,6 +345,7 @@
 				1EBFFFB223D606CC00A44F3E /* 180.png in Resources */,
 				1EBFFFB023D606CC00A44F3E /* 32.png in Resources */,
 				1EBFFFA323D606CC00A44F3E /* 58.png in Resources */,
+				1EE8898E23F349E500E3D796 /* plus-30-30.png in Resources */,
 				1EBFFFA623D606CC00A44F3E /* 172.png in Resources */,
 				1EBFFFA523D606CC00A44F3E /* 72.png in Resources */,
 				1EBFFFA023D606CC00A44F3E /* 48.png in Resources */,
