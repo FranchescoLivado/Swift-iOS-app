@@ -33,33 +33,36 @@ let imgPineapple = UIImage(named:"images/pineapple")
 let imgDragFruit = UIImage(named:"images/dragon fruit")
 let imgDurian = UIImage(named:"images/durian")
 
+var currIndex = SharingFruitCollection.sharedFruitCollection.fruitCollection!.current
+var currFruit = (SharingFruitCollection.sharedFruitCollection.fruitCollection?.collection[currIndex])
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var dislikeLabel: UILabel!
     @IBOutlet weak var likeLabel: UILabel!
     @IBOutlet weak var fruitImage: UIImageView!
- 
+    
+    var fruitCollection = FruitCollection()
+    var sharedFruitCollection : FruitCollection?
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+            sharedFruitCollection = SharingFruitCollection.sharedFruitCollection.fruitCollection // if we forget thisline, the fruit collection is not the same collection of the sharing fruit collection!
+//        fruitImage.image = currFruit?.fruitImage
+//        likeLabel.text = String(currFruit!.likes)
+//        dislikeLabel.text = String(currFruit!.disLikes)
+        
+    }
     
     override func viewDidLoad() {
+        
+
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        let imgRambutan = UIImage(named:"images/rambutan")
-        let imgPineapple = UIImage(named:"images/pineapple")
-        let imgDragFruit = UIImage(named:"images/dragon fruit")
-        let imgDurian = UIImage(named:"images/durian")
-        //pineapple = fruitStats(fruit: imgPineapple!)
-        //durian  = fruitStats(fruit: imgDurian!)
-        //dragFruit = fruitStats(fruit: imgDragFruit!)
-        //rambutan = fruitStats(fruit: imgRambutan!)
+        SharingFruitCollection.sharedFruitCollection.loadFruitCollection()
+        _ = SharingFruitCollection()
+        SharingFruitCollection.sharedFruitCollection.fruitCollection = FruitCollection() //initialize only once
+        // set up the view } //viewDidLoad
+     
+        /*
         
-        //fruitImage.image = imgPineapple
-        
-        _ = FruitCollection()
-        
-        if let i = UserDefaults.standard.integer(forKey: "currentIndex") as Int? {
-            print("Fruits existed with index: \(i)")
-            FruitCollection.setCurrentIndex(to: i)
-            }
         let fruit = FruitCollection.currentFruit()
         
         if fruit.fruitImageName == "images/rambutan" {
@@ -74,183 +77,54 @@ class ViewController: UIViewController {
         if fruit.fruitImageName == "images/durian" {
             fruitImage.image = imgDurian
         }
+         */
     }
     
  
     @IBAction func dislike(_ sender: Any) {
-        /*
-        if fruitImage.image == imgDurian{
-                durian.dislikes = durian.dislikes + 1
-                dislikeLabel.text = String(durian.dislikes)
-                likeLabel.text = String(durian.likes)
-            
-        }
-        if fruitImage.image == imgDragFruit{
-                dragFruit.dislikes = dragFruit.dislikes + 1
-                dislikeLabel.text = String(dragFruit.dislikes)
-                likeLabel.text = String(dragFruit.likes)
-            
-        }
-        if fruitImage.image == imgPineapple{
-                pineapple.dislikes = pineapple.dislikes + 1
-                dislikeLabel.text = String(pineapple.dislikes)
-                likeLabel.text = String(pineapple.likes)
-            
-        }
-        if fruitImage.image == imgRambutan{
-                rambutan.dislikes = rambutan.dislikes + 1
-                dislikeLabel.text = String(rambutan.dislikes)
-                likeLabel.text = String(rambutan.likes)
-        }*/
-        let index = FruitCollection.getCurrentIndex()
-        if FruitCollection.collection[index].fruitImageName == "images/durian"{
-                    FruitCollection.collection[index].dislikes = FruitCollection.collection[index].dislikes + 1
-                    likeLabel.text = String(FruitCollection.collection[index].likes)
-                    dislikeLabel.text = String(FruitCollection.collection[index].dislikes)
-            
-        }
-        if FruitCollection.collection[index].fruitImageName == "images/rambutan"{
-                    FruitCollection.collection[index].dislikes = FruitCollection.collection[index].dislikes + 1
-                    likeLabel.text = String(FruitCollection.collection[index].likes)
-                    dislikeLabel.text = String(FruitCollection.collection[index].dislikes)
-        }
-        if FruitCollection.collection[index].fruitImageName == "images/pineapple"{
-                    FruitCollection.collection[index].dislikes = FruitCollection.collection[index].dislikes + 1
-                    likeLabel.text = String(FruitCollection.collection[index].likes)
-                    dislikeLabel.text = String(FruitCollection.collection[index].dislikes)
-            
-        }
-        if FruitCollection.collection[index].fruitImageName == "images/dragon fruit"{
-                    FruitCollection.collection[index].dislikes = FruitCollection.collection[index].dislikes + 1
-                    likeLabel.text = String(FruitCollection.collection[index].likes)
-                    dislikeLabel.text = String(FruitCollection.collection[index].dislikes)
-            
-        }
-        
+        currIndex = SharingFruitCollection.sharedFruitCollection.fruitCollection!.current
+        currFruit = (SharingFruitCollection.sharedFruitCollection.fruitCollection?.collection[currIndex])
+        currFruit!.disLikes = currFruit!.disLikes + 1
+        dislikeLabel.text = String(currFruit!.disLikes)
+
+       //SharingFruitCollection.sharedFruitCollection.saveFruitCollection()
+
     }
     
     @IBAction func like(_ sender: Any) {
-
-        let index = FruitCollection.getCurrentIndex()
-        /*
-            if fruitImage.image == imgDurian{
-                        durian.likes = durian.likes + 1
-                        likeLabel.text = String(durian.likes)
-                        dislikeLabel.text = String(durian.dislikes)
-                
-            }
-            if fruitImage.image == imgDragFruit{
-                        dragFruit.likes = dragFruit.likes + 1
-                        likeLabel.text = String(dragFruit.likes)
-                        dislikeLabel.text = String(dragFruit.dislikes)
-            }
-            if fruitImage.image == imgPineapple{
-                        pineapple.likes = pineapple.likes + 1
-                        likeLabel.text = String(pineapple.likes)
-                        dislikeLabel.text = String(pineapple.dislikes)
-                
-            }
-            if fruitImage.image == imgRambutan{
-                        rambutan.likes = rambutan.likes + 1
-                        likeLabel.text = String(rambutan.likes)
-                        dislikeLabel.text = String(rambutan.dislikes)
-                
-            } */
-        if FruitCollection.collection[index].fruitImageName == "images/durian"{
-                    FruitCollection.collection[index].likes = FruitCollection.collection[index].likes + 1
-                    likeLabel.text = String(FruitCollection.collection[index].likes)
-                    dislikeLabel.text = String(FruitCollection.collection[index].dislikes)
-            
-        }
-        if FruitCollection.collection[index].fruitImageName == "images/rambutan"{
-                    FruitCollection.collection[index].likes = FruitCollection.collection[index].likes + 1
-                    likeLabel.text = String(FruitCollection.collection[index].likes)
-                    dislikeLabel.text = String(FruitCollection.collection[index].dislikes)
-        }
-        if FruitCollection.collection[index].fruitImageName == "images/pineapple"{
-                    FruitCollection.collection[index].likes = FruitCollection.collection[index].likes + 1
-                    likeLabel.text = String(FruitCollection.collection[index].likes)
-                    dislikeLabel.text = String(FruitCollection.collection[index].dislikes)
-            
-        }
-        if FruitCollection.collection[index].fruitImageName == "images/dragon fruit"{
-                    FruitCollection.collection[index].likes = FruitCollection.collection[index].likes + 1
-                    likeLabel.text = String(FruitCollection.collection[index].likes)
-                    dislikeLabel.text = String(FruitCollection.collection[index].dislikes)
-            
-        }
-        
-                
-        
-        
+        currIndex = SharingFruitCollection.sharedFruitCollection.fruitCollection!.current
+        currFruit = (SharingFruitCollection.sharedFruitCollection.fruitCollection?.collection[currIndex])
+        currFruit!.likes = currFruit!.likes + 1
+        likeLabel.text = String(currFruit!.likes)
+        //SharingFruitCollection.sharedFruitCollection.saveFruitCollection()
     }
     
-    
+        
     @IBAction func next(_ sender: Any) {
-        /*
-                counter += 1
-        
-        if (counter == 1){
-            fruitImage.image = imgPineapple
-            likeLabel.text = String(pineapple.likes)
-            dislikeLabel.text = String(pineapple.dislikes)
+        //let arraySize = ((SharingFruitCollection.sharedFruitCollection.fruitCollection?.collection.count)!)-1
+        SharingFruitCollection.sharedFruitCollection.fruitCollection!.current += 1
+        var currIndex = (SharingFruitCollection.sharedFruitCollection.fruitCollection!.current)
+        //currFruit = (SharingFruitCollection.sharedFruitCollection.fruitCollection?.collection[currIndex])
+        if (currIndex > ((SharingFruitCollection.sharedFruitCollection.fruitCollection?.collection.count)!-1)){
+            SharingFruitCollection.sharedFruitCollection.fruitCollection!.current = 0
+            currIndex = 0
         }
-        else if (counter == 2){
-            fruitImage.image = imgDurian
-            likeLabel.text = String(durian.likes)
-            dislikeLabel.text = String(durian.dislikes)
-        }
-        else if (counter == 3){
-            fruitImage.image = imgDragFruit
-            likeLabel.text = String(dragFruit.likes)
-            dislikeLabel.text = String(dragFruit.dislikes)
-        }
-        else{
-            counter = 0
-            fruitImage.image = imgRambutan
-            likeLabel.text = String(rambutan.likes)
-            dislikeLabel.text = String(rambutan.dislikes)
-        }
-         */
+//        if (currIndex == arraySize){
+//            currIndex = 0
+//        }
+//        else{
+//            currIndex += 1
+//        }
+        print(currIndex)
+//        print(arraySize)
 
+        currFruit = (SharingFruitCollection.sharedFruitCollection.fruitCollection?.collection[currIndex])
+        fruitImage.image = currFruit?.fruitImage
+        likeLabel.text = String(currFruit!.likes)
+        dislikeLabel.text = String(currFruit!.disLikes)
         
-        var index = 0
-        
-        print(index)
-        index = FruitCollection.getCurrentIndex()
-        
-        index += 1
-        if index >= FruitCollection.collection.count {
-            index = 0
-        }
-        FruitCollection.setCurrentIndex(to: index)
-        let fruit = FruitCollection.currentFruit()
-        if fruit.fruitImageName == "images/rambutan" {
-            fruitImage.image = imgRambutan
-            likeLabel.text = String("\(FruitCollection.collection[index].likes)")
-            dislikeLabel.text = String("\(FruitCollection.collection[index].dislikes)")
-            
-        }
-        if fruit.fruitImageName == "images/pineapple" {
-            fruitImage.image = imgPineapple
-            likeLabel.text = String("\(FruitCollection.collection[index].likes)")
-            dislikeLabel.text = String("\(FruitCollection.collection[index].dislikes)")
-            
-        }
-        if fruit.fruitImageName == "images/dragon fruit" {
-            fruitImage.image = imgDragFruit
-            likeLabel.text = String("\(FruitCollection.collection[index].likes)")
-            dislikeLabel.text = String("\(FruitCollection.collection[index].dislikes)")
-            
-        }
-        if fruit.fruitImageName == "images/durian" {
-            fruitImage.image = imgDurian
-            likeLabel.text = String("\(FruitCollection.collection[index].likes)")
-            dislikeLabel.text = String("\(FruitCollection.collection[index].dislikes)")
-            
-            
-        }
         
     }
+
     
 }

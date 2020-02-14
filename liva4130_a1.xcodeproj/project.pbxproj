@@ -55,6 +55,7 @@
 		1ECA1BC523CCFB1A00B1474B /* dragon fruit.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1ECA1BC123CCFB1A00B1474B /* dragon fruit.jpg */; };
 		1EE8898D23F349E500E3D796 /* minus-30-30.png in Resources */ = {isa = PBXBuildFile; fileRef = 1EE8898B23F349E500E3D796 /* minus-30-30.png */; };
 		1EE8898E23F349E500E3D796 /* plus-30-30.png in Resources */ = {isa = PBXBuildFile; fileRef = 1EE8898C23F349E500E3D796 /* plus-30-30.png */; };
+		1EE8899023F3546D00E3D796 /* SharingFruitCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE8898F23F3546D00E3D796 /* SharingFruitCollection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +121,7 @@
 		1ECA1BC123CCFB1A00B1474B /* dragon fruit.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "dragon fruit.jpg"; sourceTree = "<group>"; };
 		1EE8898B23F349E500E3D796 /* minus-30-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "minus-30-30.png"; path = "../../../Desktop/minus-30-30.png"; sourceTree = "<group>"; };
 		1EE8898C23F349E500E3D796 /* plus-30-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "plus-30-30.png"; path = "../../../Desktop/plus-30-30.png"; sourceTree = "<group>"; };
+		1EE8898F23F3546D00E3D796 /* SharingFruitCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharingFruitCollection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +207,7 @@
 				1ECA1B9C23CCF93B00B1474B /* ViewController.swift */,
 				1E2682FC23E0A3D200F185A8 /* Fruit.swift */,
 				1E2682FE23E0A47400F185A8 /* FruitCollection.swift */,
+				1EE8898F23F3546D00E3D796 /* SharingFruitCollection.swift */,
 				1ECA1B9E23CCF93B00B1474B /* Main.storyboard */,
 				1ECA1BA423CCF93D00B1474B /* Assets.xcassets */,
 				1EE8898B23F349E500E3D796 /* minus-30-30.png */,
@@ -377,6 +380,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EE8899023F3546D00E3D796 /* SharingFruitCollection.swift in Sources */,
 				1E2682FF23E0A47400F185A8 /* FruitCollection.swift in Sources */,
 				1E2682FD23E0A3D200F185A8 /* Fruit.swift in Sources */,
 				1ECA1B9D23CCF93B00B1474B /* ViewController.swift in Sources */,

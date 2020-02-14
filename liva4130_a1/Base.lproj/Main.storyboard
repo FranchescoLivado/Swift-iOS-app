@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qqD-cI-wBn">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Favourites-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="liva4130_a1" customModuleProvider="target" sceneMemberID="viewController">
@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nUK-bA-q1y">
-                                <rect key="frame" x="315" y="532" width="23" height="21"/>
+                                <rect key="frame" x="315" y="507.66666666666674" width="23" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="nUK-bA-q1y" secondAttribute="height" multiplier="1.09524" id="dRa-hM-0tL"/>
                                 </constraints>
@@ -25,7 +25,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2kf-kb-Nin">
-                                <rect key="frame" x="79" y="561" width="21" height="23"/>
+                                <rect key="frame" x="79" y="536.66666666666663" width="21" height="23"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="21" id="FXk-Rd-LtT"/>
                                     <constraint firstAttribute="width" secondItem="2kf-kb-Nin" secondAttribute="height" multiplier="21:23" id="V8v-W0-Ye3"/>
@@ -37,7 +37,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ta-ji-sMi">
-                                <rect key="frame" x="79" y="532.66666666666663" width="23.333333333333329" height="20.333333333333371"/>
+                                <rect key="frame" x="79" y="508.33333333333331" width="23.333333333333329" height="20.333333333333314"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="8Ta-ji-sMi" secondAttribute="height" multiplier="1.14286" id="RwQ-7T-B9b"/>
                                 </constraints>
@@ -46,7 +46,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bth-Qj-wjR">
-                                <rect key="frame" x="315" y="561" width="23" height="23"/>
+                                <rect key="frame" x="315" y="536.66666666666663" width="23" height="23"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="23" id="XMf-3t-CYI"/>
                                     <constraint firstAttribute="width" secondItem="Bth-Qj-wjR" secondAttribute="height" id="q5M-H0-7j2"/>
@@ -56,15 +56,15 @@
                                     <action selector="like:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fKf-FU-lnY"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pineapple" translatesAutoresizingMaskIntoConstraints="NO" id="Lfx-Ns-YDO">
-                                <rect key="frame" x="74.666666666666686" y="389" width="265" height="128"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Lfx-Ns-YDO">
+                                <rect key="frame" x="74.666666666666686" y="364.66666666666669" width="265" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="127.99999999999996" id="Ten-W9-eJk"/>
                                     <constraint firstAttribute="width" constant="265" id="yl6-us-Mvf"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cTK-xo-1SJ">
-                                <rect key="frame" x="180.33333333333334" y="719" width="53.333333333333343" height="30"/>
+                                <rect key="frame" x="180.33333333333334" y="670" width="53.333333333333343" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30.000000000000057" id="9qS-uC-c6Y"/>
                                     <constraint firstAttribute="width" secondItem="cTK-xo-1SJ" secondAttribute="height" multiplier="16:9" id="QHd-9F-qDt"/>
@@ -75,16 +75,6 @@
                                     <action selector="next:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZWs-gV-a2m"/>
                                 </connections>
                             </button>
-                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SbH-rP-dnA">
-                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <items>
-                                    <tabBarItem systemItem="favorites" id="h5D-zo-Ojm"/>
-                                    <tabBarItem title="Add" image="plus-30-30.png" id="2lH-pj-ckm" userLabel="Add"/>
-                                    <tabBarItem title="Delete" image="minus-30-30.png" id="f9F-VV-AXr" userLabel="Delete"/>
-                                </items>
-                            </tabBar>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -93,7 +83,6 @@
                             <constraint firstItem="Bth-Qj-wjR" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="2kf-kb-Nin" secondAttribute="trailing" constant="8" symbolic="YES" id="Mgz-s3-45D"/>
                             <constraint firstItem="Lfx-Ns-YDO" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="NoE-o1-eDH"/>
                             <constraint firstItem="Bth-Qj-wjR" firstAttribute="top" secondItem="nUK-bA-q1y" secondAttribute="bottom" constant="7.9999999999999432" id="Qbj-U3-Gkr"/>
-                            <constraint firstItem="Bth-Qj-wjR" firstAttribute="width" secondItem="2kf-kb-Nin" secondAttribute="width" multiplier="1.09524" id="Szt-Ya-yeg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cTK-xo-1SJ" secondAttribute="bottom" constant="39" id="WW2-KZ-nh4">
                                 <variation key="heightClass=regular-widthClass=compact" constant="113"/>
                             </constraint>
@@ -109,22 +98,116 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Favourites" image="star.fill" catalog="system" id="V2h-pr-OTN"/>
                     <connections>
                         <outlet property="dislikeLabel" destination="8Ta-ji-sMi" id="zVf-mC-AQj"/>
-                        <outlet property="fruitImage" destination="Lfx-Ns-YDO" id="qId-8N-LX2"/>
+                        <outlet property="fruitImage" destination="Lfx-Ns-YDO" id="ofD-Rs-h8C"/>
                         <outlet property="likeLabel" destination="nUK-bA-q1y" id="i6Z-Gg-voX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-65.217391304347828" y="138.61607142857142"/>
+            <point key="canvasLocation" x="-1294" y="1654"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="ctK-Rd-M3G">
+            <objects>
+                <tabBarController id="qqD-cI-wBn" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ccf-3S-oXO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="5zf-Cg-N69"/>
+                        <segue destination="qQc-IL-t3T" kind="relationship" relationship="viewControllers" id="oGV-DX-h3I"/>
+                        <segue destination="R9Q-Zc-roV" kind="relationship" relationship="viewControllers" id="rft-pN-rkE"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vMU-OB-MKa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1293" y="956"/>
+        </scene>
+        <!--Add-->
+        <scene sceneID="Qrb-eu-GfA">
+            <objects>
+                <viewController id="qQc-IL-t3T" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7VM-1g-M39">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xN0-ht-Ld7" userLabel="Add Fruit">
+                                <rect key="frame" x="176" y="479" width="63" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Add Fruit"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fruit Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z5S-H1-x77">
+                                <rect key="frame" x="87" y="413" width="84" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="af8-Kv-7Iz">
+                                <rect key="frame" x="87" y="234" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oN0-Ya-Zpe">
+                                <rect key="frame" x="194" y="407" width="116" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Ktx-md-Lw4"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Add" image="images/plus-30-30" id="TkE-y0-EVs"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zc1-fK-iNR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-433.33333333333337" y="1652.6785714285713"/>
+        </scene>
+        <!--Delete-->
+        <scene sceneID="s8a-C3-QvO">
+            <objects>
+                <viewController id="R9Q-Zc-roV" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ubZ-GA-Q4O">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7DO-oH-jaD">
+                                <rect key="frame" x="185" y="433" width="45" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Delete"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="No Fruit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nn0-wd-aNo">
+                                <rect key="frame" x="177" y="320" width="61" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Iws-Y6-ENF">
+                                <rect key="frame" x="87" y="184" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="iqf-9W-c0i"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Delete" image="images/minus-30-30" id="LLM-rp-934"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="moc-po-kcP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="420" y="1653"/>
         </scene>
     </scenes>
     <resources>
         <image name="hand.thumbsdown" catalog="system" width="64" height="64"/>
         <image name="hand.thumbsup" catalog="system" width="64" height="64"/>
-        <image name="minus-30-30.png" width="30" height="30"/>
-        <image name="pineapple" width="307" height="460"/>
-        <image name="plus-30-30.png" width="30" height="30"/>
+        <image name="images/minus-30-30" width="30" height="30"/>
+        <image name="images/plus-30-30" width="30" height="30"/>
+        <image name="star.fill" catalog="system" width="64" height="58"/>
     </resources>
 </document>
