@@ -30,6 +30,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         //A2
         /*UserDefaults.standard.set(FruitCollection.getCurrentIndex(),forKey: "currentIndex")*/
+        _ = SharingFruitCollection()
+        SharingFruitCollection.sharedFruitCollection.fruitCollection = sharedFruitCollection
         SharingFruitCollection.sharedFruitCollection.saveFruitCollection()
         
     }

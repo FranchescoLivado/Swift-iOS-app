@@ -131,7 +131,7 @@
         <!--Add-->
         <scene sceneID="Qrb-eu-GfA">
             <objects>
-                <viewController id="qQc-IL-t3T" sceneMemberID="viewController">
+                <viewController id="qQc-IL-t3T" customClass="AddViewController" customModule="liva4130_a1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7VM-1g-M39">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -148,9 +148,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="af8-Kv-7Iz">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="questionmark" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="af8-Kv-7Iz">
                                 <rect key="frame" x="87" y="234" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="8rI-gf-xla" appends="YES" id="KwS-bh-Oyz"/>
+                                </connections>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oN0-Ya-Zpe">
                                 <rect key="frame" x="194" y="407" width="116" height="34"/>
@@ -158,13 +162,30 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xlm-pb-YDi" userLabel="Add Fruit">
+                                <rect key="frame" x="176" y="479" width="63" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Add Fruit"/>
+                                <connections>
+                                    <action selector="addButton:" destination="qQc-IL-t3T" eventType="touchUpInside" id="RWE-Gz-vGJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Ktx-md-Lw4"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Add" image="images/plus-30-30" id="TkE-y0-EVs"/>
+                    <connections>
+                        <outlet property="fruitImageUI" destination="af8-Kv-7Iz" id="VOR-gW-gcR"/>
+                        <outlet property="fruitNameLabel" destination="oN0-Ya-Zpe" id="grM-O4-CFB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zc1-fK-iNR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="8rI-gf-xla">
+                    <connections>
+                        <action selector="addFruitObj:" destination="qQc-IL-t3T" id="pw6-PV-v2n"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-433.33333333333337" y="1652.6785714285713"/>
         </scene>
@@ -208,6 +229,7 @@
         <image name="hand.thumbsup" catalog="system" width="64" height="64"/>
         <image name="images/minus-30-30" width="30" height="30"/>
         <image name="images/plus-30-30" width="30" height="30"/>
+        <image name="questionmark" catalog="system" width="48" height="64"/>
         <image name="star.fill" catalog="system" width="64" height="58"/>
     </resources>
 </document>

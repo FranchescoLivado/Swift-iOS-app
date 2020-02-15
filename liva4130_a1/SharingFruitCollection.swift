@@ -26,21 +26,36 @@ class SharingFruitCollection {
      func loadFruitCollection(){
         print("loadFruitCollection  ...starting")
         let filePath = self.dataFilePath()
-        if (FileManager.default.fileExists(atPath: filePath)) { let data = NSMutableData(contentsOfFile: filePath)!
-        let unarchiver = NSKeyedUnarchiver(forReadingFrom: data as Data)
-        SharingFruitCollection.sharedFruitCollection.fruitCollection =
-        unarchiver.decodeObject(forKey: rootKey) as? FruitCollection
-        unarchiver.finishDecoding()
+//
+//        if (FileManager.default.fileExists(atPath: filePath)) { let data = NSMutableData(contentsOfFile: filePath)!
+//        let unarchiver = NSKeyedUnarchiver(forReadingFrom: data as Data)
+//        SharingFruitCollection.sharedFruitCollection.fruitCollection =
+//        unarchiver.decodeObject(forKey: rootKey) as? FruitCollection
+//        unarchiver.finishDecoding()
+//        }
+        if (filePath != ""){
+            if (FileManager.default.fileExists(atPath: filePath)) { let data = NSMutableData(contentsOfFile: filePath)!
+                let unarchiver = NSKeyedUnarchiver(forReadingWith: data as Data)
+                SharingFruitCollection.sharedFruitCollection.fruitCollection =
+                unarchiver.decodeObject(forKey: rootKey) as? FruitCollection
+                unarchiver.finishDecoding()
+            }
+            
         }
     }
      func saveFruitCollection(){
          let filePath = self.dataFilePath()
          print("saving the data")
          let data = NSMutableData()
-         let archiver = NSKeyedArchiver(forWritingWith: data)
-         archiver.encode(SharingFruitCollection.sharedFruitCollection.fruitCollection,
-         forKey: rootKey)
-         archiver.finishEncoding()
-         data.write(toFile: filePath, atomically: true)
+            let archiver = NSKeyedArchiver(forWritingWith: data)
+            archiver.encode(SharingFruitCollection.sharedFruitCollection.fruitCollection,
+            forKey: rootKey)
+            archiver.finishEncoding()
+            data.write(toFile: filePath, atomically: true)
+//         let archiver = NSKeyedArchiver(requiringSecureCoding: true)
+//         archiver.encode(SharingFruitCollection.sharedFruitCollection.fruitCollection,
+//         forKey: rootKey)
+//         archiver.finishEncoding()
+//         data.write(toFile: filePath, atomically: true)
      }
  } //Class

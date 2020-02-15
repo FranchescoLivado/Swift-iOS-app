@@ -79,4 +79,26 @@ class FruitCollection: NSObject, NSCoding {
         
     }
     
+    func getIndex()->Int {
+        return self.current
+    }
+    func incrementCurrent() {
+        current += 1
+    }
+    func decrementCurrent() {
+        current -= 1
+    }
+    func getFruit()->Fruit{
+        return collection[self.current]
+    }
+    func arraySize()->Int {
+        return collection.count
+    }
+    func setIndex(index: Int){
+        current = index
+    }
+    func addFruit(fruitObj: Fruit){
+        collection.append(fruitObj)
+    }
+    
 }

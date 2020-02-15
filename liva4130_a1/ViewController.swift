@@ -33,8 +33,10 @@ let imgPineapple = UIImage(named:"images/pineapple")
 let imgDragFruit = UIImage(named:"images/dragon fruit")
 let imgDurian = UIImage(named:"images/durian")
 
-var currIndex = SharingFruitCollection.sharedFruitCollection.fruitCollection!.current
-var currFruit = (SharingFruitCollection.sharedFruitCollection.fruitCollection?.collection[currIndex])
+var currIndex = SharingFruitCollection.sharedFruitCollection.fruitCollection!.getIndex()
+var currFruit = (SharingFruitCollection.sharedFruitCollection.fruitCollection?.getFruit())
+var sharedFruitCollection : FruitCollection?
+
 class ViewController: UIViewController {
     
     @IBOutlet weak var dislikeLabel: UILabel!
@@ -42,87 +44,77 @@ class ViewController: UIViewController {
     @IBOutlet weak var fruitImage: UIImageView!
     
     var fruitCollection = FruitCollection()
-    var sharedFruitCollection : FruitCollection?
+    
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
             sharedFruitCollection = SharingFruitCollection.sharedFruitCollection.fruitCollection // if we forget thisline, the fruit collection is not the same collection of the sharing fruit collection!
-//        fruitImage.image = currFruit?.fruitImage
-//        likeLabel.text = String(currFruit!.likes)
-//        dislikeLabel.text = String(currFruit!.disLikes)
-        
+
+        SharingFruitCollection.sharedFruitCollection.loadFruitCollection()
     }
     
     override func viewDidLoad() {
         
 
         super.viewDidLoad()
-        SharingFruitCollection.sharedFruitCollection.loadFruitCollection()
         _ = SharingFruitCollection()
-        SharingFruitCollection.sharedFruitCollection.fruitCollection = FruitCollection() //initialize only once
-        // set up the view } //viewDidLoad
-     
-        /*
+        SharingFruitCollection.sharedFruitCollection.fruitCollection = FruitCollection()
+        //initialize only once
+        SharingFruitCollection.sharedFruitCollection.loadFruitCollection()
         
-        let fruit = FruitCollection.currentFruit()
+        sharedFruitCollection = SharingFruitCollection.sharedFruitCollection.fruitCollection
         
-        if fruit.fruitImageName == "images/rambutan" {
-            fruitImage.image = imgRambutan
-        }
-        if fruit.fruitImageName == "images/pineapple" {
-            fruitImage.image = imgPineapple
-        }
-        if fruit.fruitImageName == "images/dragon fruit" {
-            fruitImage.image = imgDragFruit
-        }
-        if fruit.fruitImageName == "images/durian" {
-            fruitImage.image = imgDurian
-        }
-         */
+        //currFruit = (sharedFruitCollection!.getFruit())
+        fruitImage.image = currFruit?.returnUIimage()
+        likeLabel.text = String(currFruit!.checkLikes())
+        dislikeLabel.text = String(currFruit!.checkDislikes())
+        
+
     }
     
  
     @IBAction func dislike(_ sender: Any) {
-        currIndex = SharingFruitCollection.sharedFruitCollection.fruitCollection!.current
-        currFruit = (SharingFruitCollection.sharedFruitCollection.fruitCollection?.collection[currIndex])
-        currFruit!.disLikes = currFruit!.disLikes + 1
-        dislikeLabel.text = String(currFruit!.disLikes)
+        
+        //currFruit = (sharedFruitCollection!.getFruit())
+        currFruit!.upDislike()
 
-       //SharingFruitCollection.sharedFruitCollection.saveFruitCollection()
+        dislikeLabel.text = String(currFruit!.checkDislikes())
+
+       SharingFruitCollection.sharedFruitCollection.saveFruitCollection()
 
     }
     
     @IBAction func like(_ sender: Any) {
-        currIndex = SharingFruitCollection.sharedFruitCollection.fruitCollection!.current
-        currFruit = (SharingFruitCollection.sharedFruitCollection.fruitCollection?.collection[currIndex])
-        currFruit!.likes = currFruit!.likes + 1
-        likeLabel.text = String(currFruit!.likes)
-        //SharingFruitCollection.sharedFruitCollection.saveFruitCollection()
+        
+        //currFruit = (sharedFruitCollection!.getFruit())
+        currFruit!.upLike()
+        likeLabel.text = String(currFruit!.checkLikes())
+
+        SharingFruitCollection.sharedFruitCollection.saveFruitCollection()
     }
     
         
     @IBAction func next(_ sender: Any) {
-        //let arraySize = ((SharingFruitCollection.sharedFruitCollection.fruitCollection?.collection.count)!)-1
-        SharingFruitCollection.sharedFruitCollection.fruitCollection!.current += 1
-        var currIndex = (SharingFruitCollection.sharedFruitCollection.fruitCollection!.current)
-        //currFruit = (SharingFruitCollection.sharedFruitCollection.fruitCollection?.collection[currIndex])
-        if (currIndex > ((SharingFruitCollection.sharedFruitCollection.fruitCollection?.collection.count)!-1)){
-            SharingFruitCollection.sharedFruitCollection.fruitCollection!.current = 0
-            currIndex = 0
-        }
-//        if (currIndex == arraySize){
-//            currIndex = 0
-//        }
-//        else{
-//            currIndex += 1
-//        }
-        print(currIndex)
-//        print(arraySize)
-
-        currFruit = (SharingFruitCollection.sharedFruitCollection.fruitCollection?.collection[currIndex])
-        fruitImage.image = currFruit?.fruitImage
-        likeLabel.text = String(currFruit!.likes)
-        dislikeLabel.text = String(currFruit!.disLikes)
+        //increments current fruitCollection index
+        sharedFruitCollection!.incrementCurrent()
         
+        //getIndex() returns current index of collection
+        let currIndex = (sharedFruitCollection!.getIndex())
+        
+        //if current index > arraySize
+        if (currIndex > (sharedFruitCollection!.arraySize()-1)){
+            sharedFruitCollection!.setIndex(index: 0)
+        }
+
+        print(currIndex)
+
+
+        currFruit = (sharedFruitCollection?.getFruit())
+        fruitImage.image = currFruit?.returnUIimage()
+        likeLabel.text = String(currFruit!.checkLikes())
+        dislikeLabel.text = String(currFruit!.checkDislikes())
+        
+        SharingFruitCollection.sharedFruitCollection.saveFruitCollection()
         
     }
 

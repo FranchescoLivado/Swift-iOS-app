@@ -72,4 +72,22 @@ disLikesDecoded)
         self.disLikes = disLikes
     } //init?
     
+    func upLike() {
+        self.likes += 1
+    }
+    func upDislike() {
+        self.disLikes += 1
+    }
+    func checkLikes()->Int{
+        return self.likes
+    }
+    func checkDislikes()->Int{
+        return self.disLikes
+    }
+    func returnUIimage()->UIImage{
+        return self.fruitImage
+    }
+    func returnFruitName()->String{
+        return self.fruitName
+    }
 }

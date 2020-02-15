@@ -56,6 +56,7 @@
 		1EE8898D23F349E500E3D796 /* minus-30-30.png in Resources */ = {isa = PBXBuildFile; fileRef = 1EE8898B23F349E500E3D796 /* minus-30-30.png */; };
 		1EE8898E23F349E500E3D796 /* plus-30-30.png in Resources */ = {isa = PBXBuildFile; fileRef = 1EE8898C23F349E500E3D796 /* plus-30-30.png */; };
 		1EE8899023F3546D00E3D796 /* SharingFruitCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE8898F23F3546D00E3D796 /* SharingFruitCollection.swift */; };
+		1EFE486723F79505000BE0B7 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFE486623F79505000BE0B7 /* AddViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,6 +123,7 @@
 		1EE8898B23F349E500E3D796 /* minus-30-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "minus-30-30.png"; path = "../../../Desktop/minus-30-30.png"; sourceTree = "<group>"; };
 		1EE8898C23F349E500E3D796 /* plus-30-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "plus-30-30.png"; path = "../../../Desktop/plus-30-30.png"; sourceTree = "<group>"; };
 		1EE8898F23F3546D00E3D796 /* SharingFruitCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharingFruitCollection.swift; sourceTree = "<group>"; };
+		1EFE486623F79505000BE0B7 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AddViewController.swift; path = ../AddViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +204,7 @@
 		1ECA1B9723CCF93B00B1474B /* liva4130_a1 */ = {
 			isa = PBXGroup;
 			children = (
+				1EFE486623F79505000BE0B7 /* AddViewController.swift */,
 				1ECA1B9823CCF93B00B1474B /* AppDelegate.swift */,
 				1ECA1B9A23CCF93B00B1474B /* SceneDelegate.swift */,
 				1ECA1B9C23CCF93B00B1474B /* ViewController.swift */,
@@ -382,6 +385,7 @@
 			files = (
 				1EE8899023F3546D00E3D796 /* SharingFruitCollection.swift in Sources */,
 				1E2682FF23E0A47400F185A8 /* FruitCollection.swift in Sources */,
+				1EFE486723F79505000BE0B7 /* AddViewController.swift in Sources */,
 				1E2682FD23E0A3D200F185A8 /* Fruit.swift in Sources */,
 				1ECA1B9D23CCF93B00B1474B /* ViewController.swift in Sources */,
 				1ECA1BA323CCF93B00B1474B /* liva4130_a1.xcdatamodeld in Sources */,
